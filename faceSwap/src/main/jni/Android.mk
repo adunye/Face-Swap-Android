@@ -12,7 +12,7 @@ LOCAL_LDLIBS += -latomic
 # GNU make doesn't handle spaces, should be DOS style directory names
 # LOCAL_SRC_FILES := ../$(LOCAL_PATH)/dlib/all/source.cpp
 # Your dlib source.cpp path of your local copy of project in DOS style
-LOCAL_SRC_FILES := C:/Face-Swap-Android/faceSwap/src/main/jni/dlib/all/source.cpp
+LOCAL_SRC_FILES := C:/Work/Face-Swap-Android-master/faceSwap/src/main/jni/dlib/all/source.cpp
 
 LOCAL_MODULE := dlib
 
@@ -24,11 +24,11 @@ include $(CLEAR_VARS)
 ifdef OPENCV_ANDROID_SDK
   include ${OPENCV_ANDROID_SDK}/sdk/native/jni/OpenCV.mk
 else
-  include C:/Users/TUNAE/Desktop/OpenCV-Android-SDK/sdk/native/jni/OpenCV.mk
+  include C:/Users/ad2676/Downloads/OpenCV-2.4.11-android-sdk/OpenCV-android-sdk/sdk/native/jni/OpenCV.mk
 endif
 
 # LOCAL_SRC_FILES := ../$(LOCAL_PATH)/DetectionBasedTracker.cpp
-LOCAL_SRC_FILES := C:/Face-Swap-Android/faceSwap/src/main/jni/DetectionBasedTracker.cpp
+LOCAL_SRC_FILES := C:/Work/Face-Swap-Android-master/faceSwap/src/main/jni/DetectionBasedTracker.cpp
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)
 LOCAL_LDLIBS += -llog -ldl -latomic
@@ -42,11 +42,11 @@ include $(CLEAR_VARS)
 ifdef OPENCV_ANDROID_SDK
   include ${OPENCV_ANDROID_SDK}/sdk/native/jni/OpenCV.mk
 else
-  include C:/Users/TUNAE/Desktop/OpenCV-Android-SDK/sdk/native/jni/OpenCV.mk
+  include C:/Users/ad2676/Downloads/OpenCV-2.4.11-android-sdk/OpenCV-android-sdk/sdk/native/jni/OpenCV.mk
 endif
 
 # LOCAL_SRC_FILES := ../$(LOCAL_PATH)/FaceSwapper.cpp
-LOCAL_SRC_FILES := C:/Face-Swap-Android/faceSwap/src/main/jni/FaceSwapper.cpp
+LOCAL_SRC_FILES := C:/Work/Face-Swap-Android-master/faceSwap/src/main/jni/FaceSwapper.cpp
 
 LOCAL_LDLIBS += -llog -ldl -latomic
 

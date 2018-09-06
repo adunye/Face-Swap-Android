@@ -55,6 +55,12 @@
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.FullScreen">
         </activity>
+        <activity
+            android:name=".FaceSwapImagesActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.FullScreen">
+        </activity>
     </application>
 
 </manifest>

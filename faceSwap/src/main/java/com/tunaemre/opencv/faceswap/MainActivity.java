@@ -56,7 +56,19 @@ public class MainActivity extends ExtendedCompatActivity
 				startActivity(new Intent(MainActivity.this, FaceSwapActivity.class));
 			}
 		});
-		
+
+		findViewById(R.id.btnCustomFaceSwap).setOnClickListener(new OnClickListener()
+		{
+			@Override
+			public void onClick(View v)
+			{
+				if (!checkPermission())
+					return;
+
+				startActivity(new Intent(MainActivity.this, FaceSwapImagesActivity.class));
+			}
+		});
+
 		findViewById(R.id.btnMainPhotoMask).setOnClickListener(new OnClickListener()
 		{
 			@Override
